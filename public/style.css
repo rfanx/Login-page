@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {		
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #5C5696;
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #6C63AC;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #5D54A4, #6A679E);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #7E7BB9;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
+
+
+*{
+    text-decoration: none;
+    font-family: GretaSansStd, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+nav
+{
+    z-index: 1;
+    background-color: #fff;
+    height: 58px;
+    position: sticky;
+    top: 0px;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    list-style-type: none;
+    font-weight: 650;
+    font-size: 13.1px;
+    
+}
+nav a{
+    color: black;
+    display: block;
+    overflow: hidden;
+
+}
+nav a:hover{
+    color: #0078f0;
+}
+nav li{
+    display: inline-block;
+    padding: 0 11px;
+
+}
+.char{
+    padding-left: 40px;
+}
+.searcher{
+    padding-left: 120px;
+}
+
+
+.control img {
+    width: 40px;
+    
+}
+.control{
+    width: 100%;
+    
+}
+
+
+
+.hero-Content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 80px;
+    color: #fff;
+    top: 50px;
+    left: 20px;
+}
+.one-Content,.two-Content,.three-Content{
+    line-height: 40px;
+} 
+.four-Content{
+    margin-top: 20px;
+}
+.one-Content{
+    width: max-content;
+    font-size: 15px;
+}
+.hero-btn{
+    height: 35px;
+    width: 330px;
+    position: absolute;
+    top: 160px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 2px;
+    border-radius: 50px;
+    border: 1px solid rgb(7, 7, 7);
+    padding-top: 7px;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+
+
+
+
+.bat-Man{
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+.batman{
+    height: 100%;
+
+}
+
+.first-image{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 50px;
+    
+}
+.column{
+    width: 252px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 7px rgba(128, 128, 128, 0.4) ;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+.column img
+{
+    width: 100%;
+   
+    
+}
+
+
+
+.long{
+    font-size: 13px;
+    word-spacing: 4px;
+    padding-top: 20px;
+}
+.celebrate{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 22px;
+}
+.pic-1btn{
+    margin-top: 80px; 
+    margin-bottom: 30px;
+    height: 40px;
+    border-radius: 50px;
+    width: 200px;
+    font-weight: 640;
+    cursor: pointer;
+
+}
+
+.pic-1btn:hover {
+   background-color: #0074e8;
+}
+
+
+
+
+
+
+.second-comnt{
+    width: 100px;
+    display: flex;
+    border: blue 5px solid;
+}
+
+.section{
+    display: flex;
+    margin-top: 15px;
+}
+
+.videos-one{
+    padding-left: 95px;
+    padding-top: 40px;
+}
+
+.second-cmnd{
+    padding-left:30px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.featured{
+    font-size: 20px;
+    font-weight: 600;
+}
+.undline{
+    text-decoration:underline ;
+}
+
+.trailer{
+    font-size: 20px;
+    font-weight: 700;
+}
+.comd-one{
+    font-weight: 450;
+   
+    font-size: 16px;
+}
+
+.comd-2{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.next{
+    margin-left: 90px;
+    margin-top: 60px;
+    font-size: 9.9px;
+    font-weight: 900;
+}
+
+
+
+.columns video{
+    width: 250px;
+}
+.columns{
+    box-shadow: 3px 5px 5px rgba(128, 128, 128, 0.201);
+}
+.second-image{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 15px 0;
+    gap: 20px;
+    width: 85%;
+    margin: auto;
+   
+}
+.second-image::-webkit-scrollbar{ 
+    background-color: transparent;
+
+}
+
+
+.small-fonts{
+    font-size: 13px;
+    word-spacing: 4px;
+    padding-top: 20px;
+}
+
+.fonts{
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 22px;
+
+}
+
+
+.reads{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 50px 0px 80px;
+    margin-bottom: 30px;
+}
+
+.read{
+    font-weight: 800;
+    font-size: 21px;
+}
+
+
+.btns-div{
+    display: flex;
+    gap: 20px;
+}
+
+.btns-div button{
+    width: 150px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid;
+    font-weight: bold;
+}
+    
+
+.third-image{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+.imaging{
+    width: 17%;
+    box-shadow: 2px 3px 4px rgba(128, 128, 128, 0.08);
+}
+.imaging img
+{
+    width: 100%;
+}
+
+.point{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.trendig{
+    padding: 50px 0px 0px 90px;
+    font-size: 24px;
+    font-weight: bold;
+    word-spacing: -2px;
+}
+
+
+.meterials{
+    display: flex;
+    overflow-x: scroll; 
+    width: 80%; 
+    gap: 55px;
+    padding: 40px 30px 20px 40px;
+    margin: auto;
+}
+.meterials::-webkit-scrollbar{
+    background-color: transparent;
+}
+.items{
+    min-width: 20%;
+}
+.items img{
+    width: 100%;
+}
+
+.texting{
+    font-size: 15px;
+    font-weight: bold;
+}
+.girl{
+    max-height:230px;
+}
+
+
+.price{
+    padding: 20px 0px 0px 10px;
+    font-weight: 500;
+}
+
+.sizing{
+    font-size: small;
+    font-weight: 400;
+}
+.size{
+    width: 70px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: start;
+}
+
+.sold{
+    width: 120px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 25px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: rgba(128, 128, 128, 0.68);
+}
+.sold-2{
+    width: 120px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 25px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: rgb(7, 118, 236);
+
+}
+
+
+.price-flx{
+    display: flex;
+    
+    
+}
+.sized{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgb(21, 20, 20);
+    padding-left: 10px;
+}
+
+.price-sub{
+    padding-top: 50px;
+    padding-right: 10px;
+}
+
+
+.man-1{
+    max-width: 400px;
+    position: relative;
+    bottom: 163px;
+    right: -800px;
+
+}
+
+.man-1 img{
+    width: 100%;
+}
+
+.punch-man{
+    background-color: rgb(237, 189, 189);
+    
+    justify-content: space-between;
+    background-image: linear-gradient(to left, rgb(103, 0, 176) , rgb(45, 2, 76));
+    padding: 100px 0 0 40px;
+    height: 350px;
+}
+
+
+
+.man-text{
+    font-weight: bolder;
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+.man-text1{
+    padding-top: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.man-btn{
+    position: relative;
+    top: 50px;
+    
+    
+}
+.man-btn button{
+    height: 50px;
+    width: 130px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px #fff solid;
+    font-weight: bold;
+}
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    background-color: black;
+    line-height: 30px;
+
+}
+
+.logoo img{
+    max-width: 80px;
+}
+
+.logoo{
+    padding: 40px 0 0 0;
+
+}
+
+.policy{
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.rights{
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+
+}
+
+
+
+
+
+
+

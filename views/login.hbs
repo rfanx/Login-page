@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="style.css">
+
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+            <!-- Login form with POST method directed to '/verify' endpoint -->
+        	<form action="/verify" method="post" class="login">
+            <!-- username or password will error -->
+                    <h4 class="text-danger">{{msg}}</h4>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+                    <!-- Text input for username -->
+					<input type="text" name="username" class="login__input" required>
+					<label>Username</label>
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+                    <!-- Password input for user password -->
+					<input name="password" type="password" class="login__input" required>
+					<label>Password</label>
+				</div>
+				<button type="submit" class="button login__submit">
+					<span class="button__text">Log In Now</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>			
+			</form>
+			<div class="social-login">
+				
+				<div class="social-icons">
+					<a href="#" class="social-login__icon fab fa-instagram"></a>
+					<a href="#" class="social-login__icon fab fa-facebook"></a>
+					<a href="#" class="social-login__icon fab fa-twitter"></a>
+				</div>
+			</div>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+
+
