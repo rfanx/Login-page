@@ -1,7 +1,10 @@
 const express = require("express");
 const app = express();
+// template engine
 const hbs = require('hbs');
+// for managing sessions
 const session = require('express-session');
+// middleware to disable caching 
 const nocache = require("nocache");
 
 app.use(express.static('public'));
@@ -12,6 +15,7 @@ app.set('view engine', 'hbs');
 const username = "admin";
 const password = "admin@123";
 
+// middleware parse incomming JSON and URL 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
@@ -22,9 +26,10 @@ app.use(session({
     saveUninitialized: true,
 }))
 
-
+// disable caching to prevent serving cached pages 
 app.use(nocache())
 
+// handle rout
 app.get('/',(req,res) => {
     if(req.session.user){
         res.render('home')
@@ -41,7 +46,7 @@ app.get('/',(req,res) => {
 
 })
 
-// requist came inside this
+// requist came inside this and handle login verification
 app.post('/verify',(req,res) => {
 
     console.log(req.body);
@@ -56,6 +61,7 @@ app.post('/verify',(req,res) => {
     }
 });
 
+// route to handle home page
 app.get('/home',(req,res) => {
 
     if(req.session.user){
@@ -71,6 +77,7 @@ app.get('/home',(req,res) => {
     }
 })
 
+// route to handle logout
 app.get('/logout',(req,res) => {
     req.session.destroy()
     res.render('login',{msg:'Logged out'})
